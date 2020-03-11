@@ -21,7 +21,7 @@ const addtodos = todo => {
       <use href='img/sprite.svg#icon-check'></use>
     </svg>
     
-    <a href="#" class="times">${newTodo.todo}</a>
+    <span class="times">${newTodo.todo}</span>
     <span class="icon">&times;</span>
     </li>`
   );
