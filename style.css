@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+
+}
+
+body {
+    background-image: linear-gradient(to right bottom, #00897b, #26a69a);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    position: relative;
+    top: 20rem;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.container {
+    min-height: 10vh;
+    max-width: 20vw;
+    min-width: 70vw;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ccc;
+    border-radius: 3px;
+    padding: 3rem 0;
+
+}
+
+.form {
+
+    padding: 2rem;
+    min-width: 35vw;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+
+}
+
+label {
+    display: block;
+    font-size: 1.4rem;
+    margin-bottom: 1.2rem;
+}
+
+input {
+    font-family: inherit;
+    font-size: 1.4rem;
+    border: none;
+    padding: 1rem;
+    box-shadow: 0px 1rem 2rem rgba(0, 0, 0, .1);
+    display: block;
+    margin-bottom: 2.5rem;
+    border-radius: 3px;
+    transition: all .2s;
+    cursor: pointer;
+    flex: 0 1 50%;
+}
+
+input:focus {
+    outline: none;
+    transform: translateY(-.3rem);
+}
+
+.input:hover {
+    transform: translateY(-.3rem);
+}
+
+.btn {
+    display: inline-block;
+    font-size: 1.4rem;
+    font-family: inherit;
+    padding: 1rem 2rem;
+    border: none;
+    box-shadow: 0px 1rem 2rem rgba(0, 0, 0, .1);
+    margin-bottom: 2rem;
+    background-color: #009688;
+    border-radius: 200px;
+    color: white;
+    transition: all .2s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    box-shadow: 0px 1rem 2rem rgba(0, 0, 0, 0.1);
+    transform: translateY(-3px);
+
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn:active {
+    box-shadow: 0px .5rem 1rem rgba(0, 0, 0, 0.1);
+    transform: translateY(-1px);
+    cursor: pointer;
+}
+
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 1rem;
+    min-width: 35vw;
+
+}
+
+.item {
+    display: flex;
+    justify-content: flex-start;
+    align-self: center;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 3px;
+    box-shadow: 0px .5rem 1rem rgba(0, 0, 0, 0.1);
+    font-size: 1.4rem;
+}
+
+.item:not(:last-child) {
+    margin-bottom: 1.5rem;
+}
+
+.times {
+    text-decoration: none;
+    color: black;
+    margin-right: auto;
+
+}
+
+.icon {
+    line-height: 1;
+    color: grey;
+    cursor: pointer;
+    transform: scale(1.5)
+}
+
+.checked-icon {
+    fill: #00897b;
+    height: 3rem;
+    width: 3rem;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: inline;
+}
