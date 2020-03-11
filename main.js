@@ -40,6 +40,7 @@ const deleteTodo = key => {
 
 //ADD EVENT LISTENER TO THE LIST TO SELECT THE LIST
 list.addEventListener("click", e => {
+  e.preventDefault();
   const item = document.querySelector(".item");
 
   const itemTarget = e.target.closest(".item");
