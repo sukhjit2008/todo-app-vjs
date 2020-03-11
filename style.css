@@ -128,7 +128,11 @@ input:focus {
     border-radius: 3px;
     box-shadow: 0px .5rem 1rem rgba(0, 0, 0, 0.1);
     font-size: 1.4rem;
+    position: relative;
+    cursor: pointer;
 }
+
+
 
 .item:not(:last-child) {
     margin-bottom: 1.5rem;
@@ -145,6 +149,14 @@ input:focus {
     line-height: 1;
     color: grey;
     cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    transform: scale(1.5);
+    transition: all .3s;
+}
+
+.icon:hover {
     transform: scale(1.5)
 }
 
@@ -156,8 +168,4 @@ input:focus {
 
 .hide {
     display: none;
-}
-
-.show {
-    display: inline;
 }
